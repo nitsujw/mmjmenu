@@ -1,0 +1,3 @@
+module Mmjmenu
+  # Your code goes here...
+end
