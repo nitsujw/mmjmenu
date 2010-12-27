@@ -20,5 +20,12 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_development_dependency "rspec", "~> 2.0.0.beta.22"
+
+  s.add_dependency(%q<hashie>, ["~> 0.4.0"])
+  s.add_dependency(%q<httparty>, ["~> 0.6.1"])
+  #s.add_dependency(%q<shoulda>, [">= 2.10.1"])
+  #s.add_dependency(%q<jnunemaker-matchy>, ["= 0.4.0"])
+  #s.add_dependency(%q<mocha>, ["~> 0.9.8"])
+  #s.add_dependency(%q<fakeweb>, [">= 1.2.5"])
   
 end
