@@ -24,14 +24,14 @@ module Mmjmenu
     def initialize(api_key)
       @api_key = api_key
       
-      self.class.base_uri "https://mmjmenu.com"
+      self.class.base_uri "https://mmjmenu.com/api/v1"
       self.class.basic_auth @api_key, 'x'
       
     end
     
     def list_menu_items(options={})
       menu_items = get("/menu_items", :query => options)
-      menu_items.map{|c| Hashie::Mash.new c['menu_item']}
+      menu_items.map{|c| Hashie::Mash.new(c)}
     end
     
     private
