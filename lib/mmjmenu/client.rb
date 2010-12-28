@@ -29,9 +29,16 @@ module Mmjmenu
       
     end
     
-    def list_menu_items(options={})
+    def menu_items(options={})
       menu_items = get("/menu_items", :query => options)
       menu_items.map{|c| Hashie::Mash.new(c)}
+    end
+    
+    def menu_item(menu_item_id, options={})
+      request = get("/menu_items/#{menu_item_id}")
+      success = request.code == 200
+      response = Hashie::Mash.new(request) if success
+      Hashie::Mash.new(response || {}).update(:success? => success)
     end
     
     private
