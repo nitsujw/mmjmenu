@@ -20,7 +20,7 @@ module Mmjmenu
     
     attr_reader :api_key
     
-    # Your API key can be generated on the settings screen.
+    # Your API key can be generated on the options screen.
     def initialize(api_key)
       @api_key = api_key
       
