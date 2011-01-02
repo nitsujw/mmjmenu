@@ -1,5 +1,6 @@
 {
   "menu_item": {
+    "on_hold":false,
     "sativa":0,
     "thc_percent":0,
     "cdn":0,
@@ -10,7 +11,8 @@
     "body_html":"",
     "created_at":"2010-08-09T15:58:08-07:00",
     "name":"Kush",
-    "indica":0,"id":3654,
+    "indica":0,
+    "id":3654,
     "picture": {
       "original":"https://mmjmenu.com/images/attachments_missing/menu_items/images/missing_original.png",
       "square":"https://mmjmenu.com/images/attachments_missing/menu_items/images/missing_square.png",

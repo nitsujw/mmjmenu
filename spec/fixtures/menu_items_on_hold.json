@@ -2,7 +2,7 @@
 {
   "menu_items": [
     {
-      "on_hold":false,
+      "on_hold":true,
       "sativa":0,
       "thc_percent":0,
       "cdn":0,
@@ -12,7 +12,7 @@
       "genetics":null,
       "body_html":"",
       "created_at":"2010-08-09T15:58:08-07:00",
-      "name":"Kush",
+      "name":"Kush Hold",
       "indica":0,
       "id":3654,
       "picture": {
@@ -24,7 +24,7 @@
       }
     },
     {
-      "on_hold":false,
+      "on_hold":true,
       "sativa":0,
       "thc_percent":0,
       "cdn":0,
@@ -34,7 +34,7 @@
       "genetics":null,
       "body_html":"",
       "created_at":"2010-08-09T15:58:08-07:00",
-      "name":"Blueberry",
+      "name":"Blueberry Hold",
       "indica":0,
       "id":3654,
       "picture": {

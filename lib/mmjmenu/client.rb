@@ -30,7 +30,12 @@ module Mmjmenu
     end
     
     def menu_items(options={})
-      request = get("/menu_items", :query => options)
+      options[:status] ||= 'active'
+      if options[:status].to_s.downcase == 'on_hold'
+        request = get("/menu_items/on_hold", :query => options)
+      else
+        request = get("/menu_items", :query => options)
+      end
       request['menu_items'].map{|c| Hashie::Mash.new(c)}
     end
     
