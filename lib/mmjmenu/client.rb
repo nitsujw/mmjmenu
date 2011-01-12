@@ -29,6 +29,7 @@ module Mmjmenu
       
     end
     
+    #Menu Items
     def menu_items(options={})
       options[:status] ||= 'active'
       if options[:status].to_s.downcase == 'on_hold'
@@ -44,6 +45,12 @@ module Mmjmenu
       success = request.code == 200
       response = Hashie::Mash.new(request) if success
       Hashie::Mash.new(response['menu_item'] || {}).update(:success? => success)
+    end
+
+    #Patients
+    def unconfirmed_patients(options = {})
+      request = get("/patients/unconfirmed", :query => options)
+      request['patients'].map{|c| Hashie::Mash.new(c)}
     end
     
     private

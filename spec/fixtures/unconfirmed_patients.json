@@ -1,0 +1,38 @@
+{
+  "patients": [
+    {
+      "registry_no": "",
+      "address": "",
+      "city": "",
+      "card_expires_at": "",
+      "email": "",
+      "verification_number": "",
+      "dob": "",
+      "phone_number": "",
+      "verification_web": "",
+      "state": "",
+      "created_at": "2011-01-04T21:41:55-07:00",
+      "name": "Jane Doe",
+      "confirmed": false,
+      "id": 66506,
+      "zip_code": ""
+    },
+    {
+      "registry_no": "mmj123",
+      "address": "123 Osim Ville",
+      "city": "Denver",
+      "card_expires_at": "2020-01-01T00:00:00-07:00",
+      "email": "johdoe@jondoe.com",
+      "verification_number": "5555555555",
+      "dob": "1900-01-01T00:00:00-07:00",
+      "phone_number": "5555555555",
+      "verification_web": "www.web.com/verify2",
+      "state": "CO",
+      "created_at": "2011-01-11T17:11:44-07:00",
+      "name": "John Doe",
+      "confirmed": false,
+      "id": 66507,
+      "zip_code": "80222"
+    }
+  ]
+}

@@ -32,6 +32,17 @@ describe "MMJMenu API client" do
       menu_item.name.should == 'Kush'
     end
   end
+  
+  describe "Patients" do 
+    it "should return a list of unconfirmed patients" do
+      stub_get "https://ABC123:x@mmjmenu.com/api/v1/patients/unconfirmed", "unconfirmed_patients.json"
+      patients = @client.unconfirmed_patients
+      patients.size.should == 2
+      patients.first.name.should == 'Jane Doe'
+      patients.first.confirmed.should == false
+      patients.last.name.should == 'John Doe'
+    end
+  end
 
 end
 
