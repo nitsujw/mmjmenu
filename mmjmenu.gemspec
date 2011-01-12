@@ -23,9 +23,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency(%q<hashie>, ["~> 0.4.0"])
   s.add_dependency(%q<httparty>, ["~> 0.6.1"])
-  #s.add_dependency(%q<shoulda>, [">= 2.10.1"])
-  #s.add_dependency(%q<jnunemaker-matchy>, ["= 0.4.0"])
-  #s.add_dependency(%q<mocha>, ["~> 0.9.8"])
   s.add_dependency(%q<fakeweb>, [">= 1.3.0"])
   
 end
